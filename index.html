@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Id Card Generater</title>
+</head>
+<body>
+    <div class="card-body" id="card">
+        <div class="header">
+          <div class="logo"><img src="logopng.png" style="height: 90px;width: 90px;border-radius: 50%;margin-left: -375px;" alt=""></div> 
+          <h6>Council For Technical Education And Vocational Training</h6> 
+          <h5 style="font-size: 14px;color: white;margin: 2px;">Faculty Of Information Technology</h5>
+          <h4 style="font-size: 18px;color: rgb(6, 210, 247);margin: 2px;">Adhikhola Polytechnic Institute</h4>
+          <h3 style="font-size: 15px;color: rgb(255, 136, 0);margin: 2px;">Waling-13, Syangja</h3>
+        </div>
+        <div class="center">
+            <h1 style="position: fixed;margin-left: -419px;font-size: 18px;margin-top: 95px;font-family: 'Courier New', Courier, monospace;">Diploma In IT(First Year)</h1>
+            <h2 style="position: fixed;margin-left: -540px;border: 2px solid red;border-radius: 50px;background-color: blue;color: white;font-size: 20px;margin-top: 195px;transform: rotate(-90deg);">Student Identity Card</h2>
+            <label for="" id="nm">Name: <span id="name"></span></label>
+            <label for="" id="add">Address: <span id="address"></span></label>
+            <label for="" id="cont">Contact No.: <span id="contact"></span></label>
+            <label for="" id="dob">Date-Of-Birth: <span id="dateofb"></span></label>
+            <label for="" id="issdate">Issued Date: <span id="issueddate"></span></label>
+            <label for="" id="idno">ID No.: <span id="idnumber"></span></label>
+            <div class="photo">
+                <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                <p><label for="file" id="upload" style="cursor: pointer;margin-top: 355px;margin-left: -805px;background-color: white;color: red;border: 2px solid red;height: 30px;width: 145px;text-align: center;border-radius: 50px;font-size: 20px;">Upload Image</label></p>
+                <p><img id="output" width="98" height="109" style="border: 1px solid black;margin-top: 125px;margin-left: -105px;" /></p>
+            </div>
+        </div>
+        <div class="footer" style="height: 25px;background-color: red;width: 30vw;position: fixed;margin-top: 315px;">
+            <div class="tel" style="position: fixed;color: #fff;font-size: 20px;">Tel: +9779856001005</div>
+            <span id="email" style="margin-left: 210px;color: white;font-size: 20px;">E-mail: ctevt.ap@gmail.com</span>
+        </div>
+    </div>
+<button style="cursor: pointer;position: fixed;margin-top: 555px;outline: none;color: red;background-color: #fff;border: 2px solid red;border-radius: 50px;height: 35px;width: 165px;font-size: 20px;" onclick="generate()">Generate Id Card</button>
+<button style="position: fixed;margin-top: 550px;outline: none;margin-left: 360px;color: red;background-color: #fff;border: 2px solid red;border-radius: 50px;height: 35px;width: 135px;font-size: 20px;" onclick="print">Print Id Card</button>
+</body>
+<script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script>
+<script src="index.js"></script>
+</html>

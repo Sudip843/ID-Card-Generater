@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(247, 246, 125);
+}
+.card-body{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 45vh;
+    width: 30vw;
+    background-color: #fff;
+}
+.header{
+    height: 85px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(0, 17, 255);
+}
+h6{
+    margin-top: 2px;
+    color: white;
+    font-size: 12px;
+    /* position: fixed; */
+    margin-top: -95px;
+}
+label{
+    font-weight: 600;
+    position: fixed;
+    margin-left: -475px;
+    margin-top: 135px;
+}
+#nm{
+    position: fixed;
+    margin-left: -405px;
+    margin-top: 130px;
+}
+
+#add{
+        margin-left: -405px;
+
+    position: fixed;
+    margin-top: 160px;
+}
+#dob{
+        margin-left: -405px;
+
+    margin-top: 195px;
+    position: fixed;
+}
+#cont{
+        margin-left: -405px;
+
+    position: fixed;
+    margin-top: 225px;
+}
+#issdate{
+        margin-left: -405px;
+
+    position: fixed;
+    margin-top: 260px;
+}
+#name{
+    position: fixed;
+    margin-left: 10px;
+}
+#address{
+    position: fixed;
+    margin-left: 10px;
+}
+#dateofb{
+    margin-left: 10px;
+    position: fixed;
+}
+#contact{
+    position: fixed;
+    margin-left: 10px;
+}
+#issueddate{
+    margin-left: 10px;
+    position: fixed;
+}
+#idno{
+    position: fixed;
+    margin-top: 105px;
+    margin-left: -105px;
+}
+#idnumber{
+    position: fixed;
+    margin-left: 7px;
+}
+.photo{
+    position: fixed;
+}
+
+::selection{
+    color: white;
+    background-color: black;
+}
